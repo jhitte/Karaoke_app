@@ -14,10 +14,9 @@ body {
     #f5a623 80%,   /* Warm transition back */
     #d81b60 100%   /* Right side: Vibrant pink */
   );
-  /* Portrait-specific adjustments */
   @media (max-width: 600px) and (orientation: portrait) {
     padding: 10px;
-    height: auto; /* Ensure height adapts */
+    height: auto;
   }
 }
 
@@ -27,7 +26,7 @@ h1 {
   margin-bottom: 20px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   @media (max-width: 600px) and (orientation: portrait) {
-    font-size: 1.5em; /* Reduced further for portrait */
+    font-size: 1.5em;
     margin-bottom: 10px;
   }
 }
@@ -48,22 +47,32 @@ header {
   margin: 0 auto;
   width: 100%;
   max-width: 600px;
-  min-width: 300px; /* Ensure play button visibility */
+  min-width: 320px; /* Increased to ensure all controls fit */
   position: relative;
   background: #3d7ea6;
-  padding: 25px; /* Increased for portrait to reduce crunch */
+  padding: 10px; /* Reduced to minimize border effect */
+  border: none; /* Removed border to avoid thickening */
   border-radius: 5px;
   /* Portrait-specific adjustments */
   @media (max-width: 600px) and (orientation: portrait) {
-    padding: 15px; /* Adjusted for mobile portrait */
-    min-width: 280px; /* Slightly reduced but still functional */
+    padding: 5px; /* Further reduced for mobile */
+    min-width: 300px; /* Adjusted to fit controls */
     margin-bottom: 40px; /* More space before lyrics */
+    /* Ensure controls are visible */
+    audio {
+      width: 100%;
+      height: auto;
+    }
   }
   /* Landscape override */
   @media (max-width: 600px) and (orientation: landscape) {
     padding: 10px;
     min-width: 400px;
     max-width: 90%;
+    audio {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -76,12 +85,11 @@ header {
   border-radius: 5px;
   width: 80%;
   max-width: 600px;
-  margin: 70px auto 20px auto; /* Pushed down further in portrait */
+  margin: 70px auto 20px auto; /* Pushed down further */
   position: relative;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
-  /* Portrait-specific adjustments */
   @media (max-width: 600px) and (orientation: portrait) {
     font-size: 24px;
     min-height: 40px;
