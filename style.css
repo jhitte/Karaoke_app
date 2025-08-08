@@ -14,17 +14,10 @@ body {
     #f5a623 80%,   /* Warm transition back */
     #d81b60 100%   /* Right side: Vibrant pink */
   );
-  /* Suggest landscape on mobile */
+  /* Portrait-specific adjustments */
   @media (max-width: 600px) and (orientation: portrait) {
-    @media (min-width: 0px) {
-      transform: rotate(90deg);
-      width: 100vh;
-      height: 100vw;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      padding: 0;
-    }
+    padding: 10px;
+    height: auto; /* Ensure height adapts */
   }
 }
 
@@ -33,8 +26,8 @@ h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  @media (max-width: 600px) {
-    font-size: 1.8em;
+  @media (max-width: 600px) and (orientation: portrait) {
+    font-size: 1.5em; /* Reduced further for portrait */
     margin-bottom: 10px;
   }
 }
@@ -46,7 +39,7 @@ header {
   padding: 10px;
   border-radius: 5px 5px 0 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  @media (max-width: 600px) {
+  @media (max-width: 600px) and (orientation: portrait) {
     padding: 5px;
   }
 }
@@ -55,21 +48,21 @@ header {
   margin: 0 auto;
   width: 100%;
   max-width: 600px;
-  min-width: 300px; /* Ensure minimum width for controls */
+  min-width: 300px; /* Ensure play button visibility */
   position: relative;
   background: #3d7ea6;
-  padding: 20px; /* Increased for better control visibility */
+  padding: 25px; /* Increased for portrait to reduce crunch */
   border-radius: 5px;
-  /* Responsive adjustments */
-  @media (max-width: 600px) {
-    padding: 15px; /* Adjusted for mobile */
-    min-width: 250px; /* Minimum to show play button */
-    margin-bottom: 30px; /* More space before lyrics */
+  /* Portrait-specific adjustments */
+  @media (max-width: 600px) and (orientation: portrait) {
+    padding: 15px; /* Adjusted for mobile portrait */
+    min-width: 280px; /* Slightly reduced but still functional */
+    margin-bottom: 40px; /* More space before lyrics */
   }
   /* Landscape override */
   @media (max-width: 600px) and (orientation: landscape) {
     padding: 10px;
-    min-width: 400px; /* Wider in landscape */
+    min-width: 400px;
     max-width: 90%;
   }
 }
@@ -83,19 +76,20 @@ header {
   border-radius: 5px;
   width: 80%;
   max-width: 600px;
-  margin: 50px auto 20px auto; /* Pushed down further */
+  margin: 70px auto 20px auto; /* Pushed down further in portrait */
   position: relative;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
-  @media (max-width: 600px) {
+  /* Portrait-specific adjustments */
+  @media (max-width: 600px) and (orientation: portrait) {
     font-size: 24px;
     min-height: 40px;
     padding: 10px;
-    max-width: 95%;
-    margin: 40px auto 10px auto; /* Adjusted for mobile */
+    max-width: 90%;
+    margin: 50px auto 10px auto; /* Adjusted for portrait */
   }
   @media (max-width: 600px) and (orientation: landscape) {
-    margin: 20px auto 10px auto; /* Adjusted for landscape */
+    margin: 20px auto 10px auto;
   }
 }
