@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const lyricsDiv = document.getElementById('lyrics');
   let lastWord = '';
 
-  fetch('processed_audio/DoesToMe_sync.json')
+  fetch('DoesToMe_sync.json')
     .then(res => {
       if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
       return res.json();
