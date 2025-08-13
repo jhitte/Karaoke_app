@@ -1,0 +1,21 @@
+2025-08-13 18:57:47,470 - WARNING - No matching lyrics file for Heart - All I Wanna Do Is Make Love to You_BPM_103_key_G_vocals.wav
+2025-08-13 18:57:47,470 - WARNING - No matching audio file for Heart - All I Wanna Do Is Make Love to You_lyrics.txt
+2025-08-13 18:59:22,192 - WARNING - No matching lyrics file for Heart - all_i_wanna_do_is_make_love_to_you_vocals.wav
+2025-08-13 18:59:22,192 - WARNING - No matching audio file for Heart - all_i_wanna_do_is_make_love_to_you_lyrics.txt
+2025-08-13 18:59:42,682 - WARNING - No matching lyrics file for Heart - all_i_wanna_do_is_make_love_to_you_vocals.wav
+2025-08-13 18:59:42,682 - WARNING - No matching audio file for Heart - all_i_wanna_do_is_make_love_to_you_lyrics.txt
+2025-08-13 19:04:16,481 - ERROR - Error processing heart_all_i_wanna_do_is_make_love_to_you.wav: 'str' object has no attribute 'get'
+2025-08-13 19:08:21,669 - WARNING - No word-level timestamps for D:\karaoke_app\lyrics\heart_all_i_wanna_do_is_make_love_to_you.txt. Using linear interpolation.
+2025-08-13 19:08:24,151 - ERROR - Failed to get duration for D:\karaoke_app\audio_to_sync\heart_all_i_wanna_do_is_make_love_to_you.wav: cannot unpack non-iterable float object
+2025-08-13 19:08:24,151 - ERROR - No valid timestamps for D:\karaoke_app\lyrics\heart_all_i_wanna_do_is_make_love_to_you.txt. Using interpolation.
+2025-08-13 19:08:24,151 - INFO - Successfully processed heart_all_i_wanna_do_is_make_love_to_you.wav to D:\karaoke_app\output\heart_all_i_wanna_do_is_make_love_to_you.lrc
+2025-08-13 19:24:27,854 - INFO - Skipping heart_all_i_wanna_do_is_make_love_to_you.wav: Output D:\karaoke_app\output\heart_all_i_wanna_do_is_make_love_to_you.lrc already exists
+2025-08-13 19:30:59,907 - ERROR - Error processing heart_all_i_wanna_do_is_make_love_to_you.wav: EncDecRNNTModel.transcribe() got an unexpected keyword argument 'logprob_threshold'
+2025-08-13 19:32:38,184 - WARNING - No matching lyrics file for heart_all_i_wanna_do_is_make_love_to_you.temp.wav
+2025-08-13 19:32:42,258 - ERROR - Error processing heart_all_i_wanna_do_is_make_love_to_you.wav: EncDecRNNTModel.transcribe() got an unexpected keyword argument 'logprob_threshold'
+2025-08-13 19:42:52,478 - WARNING - No matching lyrics file for heart_all_i_wanna_do_is_make_love_to_you.temp.wav
+2025-08-13 19:42:58,834 - INFO - Detected 0 timestamps for D:\karaoke_app\lyrics\heart_all_i_wanna_do_is_make_love_to_you.txt
+2025-08-13 19:42:59,204 - ERROR - Failed to get duration for D:\karaoke_app\audio_to_sync\heart_all_i_wanna_do_is_make_love_to_you.wav: cannot unpack non-iterable float object
+2025-08-13 19:42:59,204 - WARNING - No valid timestamps for D:\karaoke_app\lyrics\heart_all_i_wanna_do_is_make_love_to_you.txt. Using interpolation.
+2025-08-13 19:42:59,204 - INFO - Mapped 64 timestamps to 64 lyrics lines
+2025-08-13 19:42:59,205 - INFO - Successfully processed heart_all_i_wanna_do_is_make_love_to_you.wav to D:\karaoke_app\output\heart_all_i_wanna_do_is_make_love_to_you.lrc
