@@ -1,0 +1,26 @@
+# Python virtual environment
+karaoke_env/
+__pycache__/
+*.pyc
+
+# Pip cache and build files
+*.egg
+*.egg-info
+*.whl
+build/
+dist/
+
+# Audio and processed files
+*.wav
+processed_audio/
+audio/
+peaks/
+
+# Script files (unless needed online)
+*.py
+*.bat
+
+# IDE and editor files
+.vscode/
+*.sublime-*
+*.idea/

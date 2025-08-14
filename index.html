@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karaoke App</title>
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    #audioPlayer {
+      display: block !important;
+      width: 100%;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Karaoke App</h1>
+  </header>
+  <div id="player">
+    <select id="songSelect">
+      <option value="">Select a song</option>
+      <option value="doesToMe" data-audio="/DoesToMeVocals.mp3" data-lrc="/DoesToMeLyrics.lrc">Does To Me</option>
+    </select>
+    <audio id="audioPlayer" controls preload="metadata">
+      <source src="/DoesToMeVocals.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <div id="lyrics">Select a song to start.</div>
+  <script src="/script.js"></script>
+</body>
+</html>
