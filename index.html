@@ -2,32 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <title>Karaoke App</title>
-  <link rel="stylesheet" href="/style.css">
-  <style>
-    #audioPlayer {
-      display: block !important;
-      width: 100%;
-      margin-top: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <div class="container">
     <h1>Karaoke App</h1>
-  </header>
-  <div id="player">
-    <select id="songSelect">
+    <select id="songSelect" onchange="loadSong(this.value)">
       <option value="">Select a song</option>
-      <option value="doesToMe" data-audio="/DoesToMeVocals.mp3" data-lrc="/DoesToMeLyrics.lrc">Does To Me</option>
+      <option value="does_to_me.mp3">Does To Me</option>
+      <option value="heart_all_i_wanna_do_is_make_love_to_you.wav">All I Wanna Do Is Make Love to You</option>
     </select>
-    <audio id="audioPlayer" controls preload="metadata">
-      <source src="/DoesToMeVocals.mp3" type="audio/mpeg">
+    <audio id="audioPlayer" controls preload="auto">
+      <source src="" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
+    <div id="lyrics-container" class="lyrics-scroll">
+      <div id="lyrics">Select a song to see lyrics.</div>
+    </div>
   </div>
-  <div id="lyrics">Select a song to start.</div>
-  <script src="/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
