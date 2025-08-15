@@ -2,7 +2,7 @@ let lyricsData = {};
 let timeKeys = [];
 let lyricsLines = [];
 let lastDisplayedTime = null;
-const TIMESTAMP_OFFSET = -4.85; // Calibrated for ~4.85s delay in vocal WAV
+const TIMESTAMP_OFFSET = -5.0; // Calibrated for ~5s delay in MP3
 
 function loadSong(file) {
   const audio = document.getElementById('audioPlayer');
@@ -12,7 +12,7 @@ function loadSong(file) {
   lyricsDiv.textContent = 'Loading lyrics...';
 
   const lrcMap = {
-    'heart_all_i_wanna_do_is_make_love_to_you.wav': 'heart_all_i_wanna_do_is_make_love_to_you.lrc',
+    'heart_all_i_wanna_do_is_make_love_to_you.mp3': 'heart_all_i_wanna_do_is_make_love_to_you.lrc',
     'does_to_me.mp3': 'does_to_me.lrc'
   };
 
